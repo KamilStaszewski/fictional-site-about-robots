@@ -1,0 +1,30 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .row {
+    margin: 20px 0;
+
+    @for $i from 1 through 12 {
+      .col-#{$i} {
+        // box-sizing: border-box;
+        // dajemy to wtedy, jesli nie zresetujemy ustawien przegladarki
+        padding: 0 20px;
+        min-height: 1px;
+        margin: 20px 0;
+
+        @media #{$small-up} {
+          float: left;
+          width: (100% / 12) * $i;
+          margin: 0;
+        }
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}

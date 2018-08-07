@@ -1,0 +1,30 @@
+@import "modules/all";
+
+@import "components/base";
+@import "components/reset";
+@import "components/grid";
+@import "components/header";
+@import "components/welcome";
+@import "components/gallery";
+@import "components/about";
+$medium-up: "screen and (min-width: 1024px)";
+#menu-trigger {
+    display: block;
+    background: #ff4486;
+    border: 0;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+  
+    @media #{$medium-up} {
+      display: none;
+    }
+  }
+
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
