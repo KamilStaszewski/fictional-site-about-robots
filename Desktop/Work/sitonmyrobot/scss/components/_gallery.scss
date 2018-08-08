@@ -1,5 +1,11 @@
+.gallery__head {
+    text-align: center;
+    padding: 20px;
+}
+
 .gallery__item {
     background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     border-radius: 5px;
 }
 
@@ -14,12 +20,12 @@
 
 .gallery__text {
     margin: 0 auto;
-    padding: 35px;
+    padding: 15px;
 }
 
 
 .gallery__headline {
-    padding-top: 25px;
+    padding-top: 5px;
     font-size: 20px;
     font-weight: 800;
 }

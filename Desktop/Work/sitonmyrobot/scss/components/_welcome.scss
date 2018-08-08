@@ -1,8 +1,11 @@
 $welcome-section-bg: #FFF;
 
 .welcome {
-  background: $welcome-section-bg;
+  background: url(https://images.pexels.com/photos/1020325/pexels-photo-1020325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 10px;
   padding: 20px 10px;
   display: flex;
@@ -17,6 +20,7 @@ $welcome-section-bg: #FFF;
   @media #{$small-up} {
     margin-left: 0;
     margin-right: 0;
+    height: 60vh;
   }
 }
 
@@ -24,23 +28,22 @@ $welcome-section-bg: #FFF;
   // width: 50%;
   flex-basis: 100%;
 
-  @media #{$small-up} {
-    flex-basis: 50%;
-  }
 }
 
 .welcome__button-container {
   // width: 27%;
   flex-basis: 100%;
+  display: flex;
+  justify-content: center;
 
   @media #{$small-up} {
     flex-basis: 27%;
   }
 
   button {
-    width: 100%;
-    padding: 15px 30px;
-    font-size: 30px;
+    width: 20%;
+    padding: 20px 20px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
     display: flex;
@@ -48,7 +51,7 @@ $welcome-section-bg: #FFF;
     flex-direction: row-reverse;
     align-items: center;
     background: none;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 0;
 
     @media #{$small-up} {
@@ -74,7 +77,7 @@ $welcome-section-bg: #FFF;
   }
 
   .welcome__button--next {
-    background: #0090c5;
+    background: #D7BE82;
     color: $welcome-section-bg;
   }
 
@@ -82,22 +85,19 @@ $welcome-section-bg: #FFF;
 
 .welcome__header {
   font-weight: 800;
-  color: #444;
+  color: #7A4419  ;
   text-align: center;
   font-size: 32px;
 
   @media #{$mobile-up} {
     font-size: 56px;
   }
-
-  @media #{$small-up} {
-    text-align: left;
-  }
 }
 
 .welcome__description {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #7A4419  ;
   text-align: center;
   margin-bottom: 40px;
 
@@ -107,7 +107,6 @@ $welcome-section-bg: #FFF;
 
   @media #{$small-up} {
     font-size: 35px;
-    text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }

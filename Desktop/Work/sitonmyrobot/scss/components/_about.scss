@@ -1,5 +1,5 @@
 .about {
-    background: #fff;
+    background: rgb(241, 255, 239);
     padding: 30px;
     margin-top: 60px;
 }
@@ -7,68 +7,15 @@
 .about__headline {
     padding-top: 20px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
-.about__images {
-    padding-top: 10px;
-    padding-left: 0;
-    padding-bottom: 80px;
-    height: 300px;
+.about__firms {
     display: flex;
-    flex-wrap: wrap;
-
-
-    img {
-        width: 50%;
-        height: 33%;
-        padding: 10px;
-        padding-left: 0px;
-        border-radius: 15px;
-    }
-
-    button {
-        width: 100%;
-        padding-top: 5px;
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
-        align-items: center;
-        background: none;
-        border-radius: 10px;
-        border: 0;
-        background: #0090c5;
-        color: $welcome-section-bg;
-
-        @media #{$small-up} {
-            width: 40%;
-         
-        }
-    }
 }
 
-.about__text {
-    button {
-        width: 100%;
-        padding: 5px 10px;
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
-        align-items: center;
-        background: none;
-        border-radius: 10px;
-        border: 0;
-        background: #0090c5;
-        color: $welcome-section-bg;
-
-        @media #{$small-up} {
-            width: 40%;
-         
-        }
-    }
+.about__firm-image {
+    flex-basis: 25%;
 }
+
+
