@@ -41,9 +41,9 @@ $welcome-section-bg: #FFF;
   }
 
   button {
-    width: 20%;
-    padding: 20px 20px;
-    font-size: 20px;
+    width: 30%;
+    padding: 10px 10px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 15px;
     display: flex;
@@ -57,6 +57,8 @@ $welcome-section-bg: #FFF;
     @media #{$small-up} {
       flex-direction: row;
       justify-content: space-between;
+      padding: 20px 20px;
+      font-size: 20px;
     }
 
     span {
@@ -108,5 +110,14 @@ $welcome-section-bg: #FFF;
   @media #{$small-up} {
     font-size: 35px;
     margin-bottom: 20px;
+  }
+}
+
+.arrow__div {
+  display: flex;
+  justify-content: center;
+
+  .fa-arrow-down {
+    font-size: 50px;
   }
 }

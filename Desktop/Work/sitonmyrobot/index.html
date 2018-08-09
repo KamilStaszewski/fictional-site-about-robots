@@ -12,9 +12,15 @@
 </head>
 
 <body>
-  <button id="menu-trigger">
-    <i class="fas fa-bars"></i>
-  </button>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Products</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <span class="side__button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
   <header class="header">
     <div class="container">
@@ -61,7 +67,10 @@
     </div>
   </section>
 
-  <!-- tu może być jakiś szary pasek -->
+  <div class="arrow__div">
+    <i class="fas fa-arrow-down"></i>
+  </div>
+
 
   <section>
     <div class="container">
